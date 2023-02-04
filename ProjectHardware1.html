@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Project.css">
+    <link rel="stylesheet" href="hetul.css">
+    <link rel="stylesheet" type="text/css" href="hetul.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<script src="https://kit.fontawesome.com/045d4737ce.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@500;600;700&family=Raleway:wght@900&display=swap" rel="stylesheet">
+</head>
+<body style="background: white">
+    <!-- Navbar -->
+    <section class="start" style="background: transparent">
+      <div class="main-width">
+          <div class="nav-background" style="position: fixed">
+          <header>
+              <div class="logo">
+                <img src="images2/lcss.png">
+              </div>
+              <nav>
+                  <ul class="nav-list">
+                    <li><a href='index.html'>Home <i class="fa-solid fa-caret-up"></i></a></li>
+                    <li><a href='Projects.html'>Projects <i class="fa-solid fa-caret-up"></i></a></li>
+                    <li><a href='Biologypage.html'>Tutoring <i class="fa-solid fa-caret-up"></i></a></li>
+                  </ul>
+              </nav>
+          </header>
+          </div>
+
+
+
+    <div class="background" style="background-color: rgb(255, 50, 50); opacity: 0.75">
+    </div>
+    <div class="section">
+        <div class="section-img">
+            <div class="section-img-inner" style="background-image:url(images2/DC1.png)">
+            </div>
+        </div>
+        <div class="section-body">
+            <div class="section-text">
+                <h2>WHAT IS IT?</h2>
+                <p class="description">
+                  I created a DC motor that utilizes all the skills and knowledge during my physics course for the final project. 
+                  DC motors are used in our everyday lives and their primary function is to convert electrical energy to rotational kinetic energy. 
+                  This is what powers your fan, cars, and toys. <br/><br/>
+                  What seperates DC motors from AC motors is that DC is "direct current", a steady stream of current as opposed to "alternating current", which 
+                  alternates. <br/><br/>
+                  The project combines ideas of electromagnetism, circuits, and motors.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="section-img">
+            <div class="section-img-inner" style="background-image:url(images2/DC2.png)">
+            </div>
+        </div>
+        <div class="section-body">
+            <div class="section-text">
+                <h2>HOW WE MADE IT</h2>
+                <p class="description">
+                    A detailed decription of how I made the motor and how it works can be seen here: 
+                    </p>
+                    <br/><br/>
+                    <center><iframe width="560" height="315" src="https://www.youtube.com/embed/N_wVnH0f8XE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+                    <p class="description">
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="section-img">
+            <div class="section-img-inner" style="background-image:url(images2/DC3.png)">
+            </div>
+        </div>
+        <div class="section-body">
+            <div class="section-text">
+                <h2>WHAT I LEARNED</h2>
+                <p class="description">
+                  This was my first experience working on a project with an open objective of making a DC motor, any design! It allowed me to have the freedom 
+                  to implement techniques and devices to make it spin optimally. <br/><br/>
+                  This was also my first hands on project in High School due to the difficulties of the pandemic. <br/><br/>
+                  The main skills I learned were getting past trial and error and learning from mistakes to make the next prototype work. On top of this, 
+                  the project asked for proper time-management as assembling the project wasn't bad, but adjusting and gathering the proper materials would consume the most time. 
+                  Going through dozens of places looking for the right wire and specific parts.
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script>
+        $(window).scroll(function() {
+            let o=$(window),i=$("body"),t=$(".section"),s=o.scrollTop()+o.height()/3;
+            t.each(function() {
+                $(this).position().top<=s&&$(this).position().top+$(this).height()>s&&(i.removeClass(function(o,i){
+                    return i.match(/(^|\s)color-\s+/g)||[].join(" ")}
+                ),$(".section").removeClass("active"),$(this).addClass("active"))}
+            )}
+        ).scroll();
+    </script>
+</body>
+</html>

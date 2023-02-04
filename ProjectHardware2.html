@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Project.css">
+    <link rel="stylesheet" type="text/css" href="hetul.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<script src="https://kit.fontawesome.com/045d4737ce.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@500;600;700&family=Raleway:wght@900&display=swap" rel="stylesheet">
+</head>
+<body style="background: white">
+  <!-- Navbar -->
+  <section class="start" style="background: transparent">
+    <div class="main-width">
+        <div class="nav-background" style="position: fixed">
+          <header>
+              <div class="logo">
+                <img src="images2/lcss.png">
+              </div>
+              <nav>
+                  <ul class="nav-list">
+                    <li><a href='index.html'>Home <i class="fa-solid fa-caret-up"></i></a></li>
+                    <li><a href='Projects.html'>Projects <i class="fa-solid fa-caret-up"></i></a></li>
+                    <li><a href='Biologypage.html'>Tutoring <i class="fa-solid fa-caret-up"></i></a></li>
+                  </ul>
+              </nav>
+          </header>
+          </div>
+        </section>
+
+
+
+    <div class="background" style="background-color: rgb(255, 94, 0); opacity: 0.75">
+    </div>
+    <div class="section">
+        <div class="section-img">
+            <div class="section-img-inner" style="background-image:url(images/1.png)">
+            </div>
+        </div>
+        <div class="section-body">
+            <div class="section-text">
+                <h2>WHAT IS IT?</h2>
+                <p class="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, ea magnam sapiente sint accusantium tempora quasi cupiditate in mollitia magni nam. Et, soluta aperiam? Quasi doloremque aut quibusdam sit eos.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="section-img">
+            <div class="section-img-inner" style="background-image:url(images/2.png)">
+            </div>
+        </div>
+        <div class="section-body">
+            <div class="section-text">
+                <h2>HOW WE MADE IT</h2>
+                <p class="description">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione cum perferendis aliquid totam aut quam id dolores asperiores quas alias iusto, neque provident nisi illo iste, ipsum maiores et quis!
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="section-img">
+            <div class="section-img-inner" style="background-image:url(images/3.png)">
+            </div>
+        </div>
+        <div class="section-body">
+            <div class="section-text">
+                <h2>WHAT I LEARNED</h2>
+                <p class="description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis delectus, ullam nostrum quos amet exercitationem accusamus aspernatur recusandae nemo, tempora totam consectetur? Illum in veniam labore enim velit omnis ex?
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script>
+        $(window).scroll(function() {
+            let o=$(window),i=$("body"),t=$(".section"),s=o.scrollTop()+o.height()/3;
+            t.each(function() {
+                $(this).position().top<=s&&$(this).position().top+$(this).height()>s&&(i.removeClass(function(o,i){
+                    return i.match(/(^|\s)color-\s+/g)||[].join(" ")}
+                ),$(".section").removeClass("active"),$(this).addClass("active"))}
+            )}
+        ).scroll();
+    </script>
+</body>
+</html>

@@ -1,0 +1,187 @@
+#defaultbackground {
+  background-color: rgb(39, 39, 39) !important; 
+}
+
+.image-grid {
+  --gap: 16px;
+  --num-cols: 4;
+  --row-height: 35vh;
+  box-sizing: border-box;
+  padding: var(--gap);
+  display: grid;
+  grid-template-columns: repeat(var(--num-cols), 1fr);
+  grid-auto-rows: var(--row-height);
+  gap: var(--gap);
+}
+.image-grid .proj {
+  border-radius: 20px;
+  transition: 0.15s;
+}
+.image-grid .proj img {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  object-fit: cover;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.image-grid .proj:hover img:hover{
+  opacity: 0.4;
+  cursor: pointer;
+  transition: 0.15s;
+}
+.image-grid .proj .overlay {
+  background-color: red;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  transition: 0.15s;
+}
+.image-grid .proj .text {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4em;
+  position: absolute;
+  margin-top: -100px;
+  padding: 20px;
+  opacity: 0;
+  transition: 0.15s;
+}
+.image-grid .proj:hover .text {
+  cursor: default;
+  pointer-events: none;
+  transform: translateY(-20px);
+  transition: 0.15s;
+  opacity: 1;
+}
+.image-grid .proj:hover .overlay {
+  transform: translateY(-10px);
+  transition: 0.15s;
+}
+.image-grid-col-2 {
+  grid-column: span 2;
+}
+.image-grid-col-3 {
+  grid-column: span 3;
+}
+.image-grid-col-4 {
+  grid-column: span 4;
+}
+.image-grid-row-2 {
+  grid-row: span 2;
+}
+.image-grid-row-3 {
+  grid-row: span 3;
+} 
+.image-grid-row-4 {
+  grid-row: span 4;
+}
+.heading {
+  font-family: Verdana;
+  font-size: 4em;
+  color:white;
+  font-weight: bold;
+  float: left;
+  margin: 0% 1%;
+  position: relative;
+  top: 0.1em;  
+}
+.heading a{
+  color: white;
+  text-decoration: none;
+  background-image: none, 
+  linear-gradient(#ffffff, #ffffff);
+  background-size: 100% 10px, 0 10px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.15s linear;
+}
+.heading a:hover {
+  background-size: 0 3px, 100% 3px;
+}
+
+@media screen and (max-width: 1024px) {
+  .image-grid {
+    --num-cols: 2;
+    --row-height: 200px;
+  }
+    .heading a:hover {
+      background-size: 0 2px, 100% 2px;
+    }
+}
+.softwareLinks {
+  display: flex;
+  margin-top: 120px;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: black;
+  border-radius: 15px;
+  border: medium gray solid;
+  padding-bottom: 20px;
+}
+.repo {
+  display: inline-block;
+  max-width: 400px;
+  min-width: 350px;
+  height: auto;
+  padding-bottom: 10px;
+  background: rgb(14, 17, 22);
+  border-radius: 10px;
+  border: medium solid rgb(99, 100, 102);
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 30px;
+}
+.row {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  margin: 0;
+}
+.repoLink {
+  text-decoration: none;
+  color: rgb(44, 128, 255);
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 10px;
+  margin-top: 0px;
+}
+.repoLink:hover {
+  text-decoration: underline;
+}
+.scopeText {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: rgb(141, 148, 157);
+  width: 60px;
+  text-align: center;
+  border-radius: 20px;
+  border: medium solid rgb(45, 48, 54);
+  margin-left: 15px;
+}
+.repo-description {
+  color: red;
+  margin-top: 3px;
+  margin-left: 20px;
+  margin-right: 15px;
+  margin-bottom: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: rgb(141, 148, 157);
+}
+.circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 10px;
+  background: rgb(66,148,210);
+  margin-left: 20px;
+}
+.repo-language {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: rgb(141, 148, 157);
+  margin-left: 8px;
+}
+
